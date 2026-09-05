@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #f6f3f1;
+  --color-lake-blue: #2b59d1;
+  --color-periwinkle-mist: #cfdaf5;
+  --color-sky-blue: #a0b5eb;
+  --color-mint: #a7fccd;
+  --color-coral: #ff9473;
+  --color-gold: #ecda98;
+  --color-crimson: #f37a0a;
+  --color-off-black: #242424;
+  --color-ink: #000000;
+  --color-graphite: #4e4d4d;
+  --color-smoke: #797776;
+  --color-ash: #cecac8;
+
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --radius-cards: 40px;
+  --radius-buttons: 100px;
+  --radius-pills: 9999px;
+  --radius-tags: 9999px;
+}
+
+:root {
+  --color-parchment: #f6f3f1;
+  --color-lake-blue: #2b59d1;
+  --color-periwinkle-mist: #cfdaf5;
+  --color-sky-blue: #a0b5eb;
+  --color-mint: #a7fccd;
+  --color-coral: #ff9473;
+  --color-gold: #ecda98;
+  --color-crimson: #f37a0a;
+  --color-off-black: #242424;
+  --color-ink: #000000;
+  --color-graphite: #4e4d4d;
+  --color-smoke: #797776;
+  --color-ash: #cecac8;
+
+  --page-max-width: 1432px;
+}
+
+body {
+  background-color: #f6f3f1;
+  color: #242424;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  letter-spacing: -0.025em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Editorial Headings */
+h1, h2, h3, h4, .font-serif-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Hairline Ash borders */
+.border-ash-hairline {
+  border-color: #cecac8;
+}
+
+/* Atmospheric Gradient Wash */
+.atmospheric-wash-coral-sky {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 148, 115, 0.45) 0%, rgba(160, 181, 235, 0.4) 50%, rgba(167, 252, 205, 0) 85%);
+  filter: blur(60px);
+}
+
+.atmospheric-wash-blue-mint {
+  background: radial-gradient(circle at 50% 50%, rgba(160, 181, 235, 0.5) 0%, rgba(167, 252, 205, 0.4) 60%, rgba(246, 243, 241, 0) 90%);
+  filter: blur(65px);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f3f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cecac8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #797776;
+}
+
+/* Selection */
+::selection {
+  background: #cfdaf5;
+  color: #242424;
+}
