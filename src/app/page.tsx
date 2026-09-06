@@ -1,6 +1,7 @@
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { LogoShowcase } from "@/components/LogoShowcase";
 import { SynergyPipeline } from "@/components/SynergyPipeline";
 import { ServicesSection } from "@/components/ServicesSection";
 import { CaseStudiesSection } from "@/components/CaseStudiesSection";
@@ -12,38 +13,41 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f6f3f1] text-[#242424]">
-      {/* 1. Monad Top Announcement Strip */}
+    <main className="min-h-screen bg-[#08120a] text-[#f3e8d2]">
+      {/* 1. Top Announcement Strip in Imperial Emerald #10451d */}
       <AnnouncementBar />
 
-      {/* 2. Primary Navigation Bar with Mobile Drawer */}
+      {/* 2. Primary Navigation Bar with Dark Glassmorphic Styling & Mobile Drawer */}
       <Navbar />
 
-      {/* 3. Pure Typographic Hero Section with Gradient Wash */}
+      {/* 3. Pure Typographic Hero Section with Deep Imperial Emerald Wash */}
       <HeroSection />
 
-      {/* 4. Interactive Synergy Pipeline (Curved flow lines, glowing hub, telemetry) */}
+      {/* 4. Interactive Logo & Mark Architecture Showcase with Geometric Construction Toggle */}
+      <LogoShowcase />
+
+      {/* 5. Interactive Quad-Pillar Synergy Pipeline */}
       <SynergyPipeline />
 
-      {/* 5. The Three Disciplines (Including the signature elevated Periwinkle Mist Card) */}
+      {/* 6. The Four Disciplines (Including Elevated Next.js Card with #10451d Emerald Satin) */}
       <ServicesSection />
 
-      {/* 6. Selected Works & Verified Outcomes */}
+      {/* 7. Selected Works & Case Studies with Logo & Platform Filters */}
       <CaseStudiesSection />
 
-      {/* 7. Interactive Real-Time Scope & Price Estimator */}
+      {/* 8. Interactive Real-Time Scope & Price Estimator with Logo Design Tiers */}
       <ProjectCalculator />
 
-      {/* 8. Executive Client Testimonials */}
+      {/* 9. Executive Client Testimonials */}
       <TestimonialsSection />
 
-      {/* 9. Editorial FAQ Accordion Rows */}
+      {/* 10. Editorial FAQ Accordion Rows */}
       <FaqSection />
 
-      {/* 10. Consultation & Commission Inquiry Form */}
+      {/* 11. Consultation & Commission Inquiry Form */}
       <ContactSection />
 
-      {/* 11. Monad Editorial Footer */}
+      {/* 12. Monad Editorial Footer */}
       <Footer />
     </main>
   );

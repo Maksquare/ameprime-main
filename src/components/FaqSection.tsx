@@ -13,43 +13,38 @@ export function FaqSection() {
   };
 
   return (
-    <section id="faq" className="py-20 sm:py-28 border-t border-[#cecac8]">
+    <section id="faq" className="py-20 sm:py-28 border-t border-[#184e27]">
       <div className="mx-auto max-w-[1432px] px-4 sm:px-8">
         {/* Header */}
         <div className="max-w-[760px] mb-12">
-          <span className="font-mono text-[12px] uppercase text-[#797776] tracking-widest block mb-3">
+          <span className="font-mono text-[12px] uppercase text-[#22c55e] tracking-widest block mb-3">
             INQUIRY PROTOCOLS // FREQUENTLY ADDRESSED
           </span>
-          <h2 className="font-serif text-[38px] sm:text-[48px] text-[#242424] leading-[1.15] font-normal">
-            Clarity across scope, engineering &amp; execution.
+          <h2 className="font-serif text-[38px] sm:text-[48px] text-[#f3e8d2] leading-[1.15] font-normal">
+            Clarity across logo architecture, code &amp; execution.
           </h2>
         </div>
 
-        {/* Accordion Rows — strictly matching DESIGN.md:
-            Full-width row, 40px vertical padding, 1px Ash (#cecac8) bottom border only.
-            Question text in Untitled Serif at 24px weight 400, Off-Black.
-            Trailing down-chevron icon (↓) in Off-Black, 20px, right-aligned.
-            No background fill change on hover.
-        */}
-        <div className="border-t border-[#cecac8]">
+        {/* Accordion Rows */}
+        <div className="border-t border-[#184e27]">
           {faqsData.map((item) => {
             const isOpen = openId === item.id;
 
             return (
-              <div key={item.id} className="border-b border-[#cecac8]">
+              <div key={item.id} className="border-b border-[#184e27]">
                 <button
                   onClick={() => toggleItem(item.id)}
-                  className="flex w-full items-center justify-between text-left py-10 transition-colors focus:outline-none"
+                  className="flex w-full items-center justify-between text-left py-10 transition-colors focus:outline-none group"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif text-[22px] sm:text-[24px] text-[#242424] font-normal pr-6">
+                  <span className="font-serif text-[22px] sm:text-[24px] text-[#f3e8d2] font-normal pr-6 group-hover:text-[#22c55e] transition-colors">
                     {item.question}
                   </span>
                   <div className="shrink-0 ml-4">
                     <motion.div
                       animate={{ rotate: isOpen ? 180 : 0 }}
                       transition={{ duration: 0.2 }}
-                      className="text-[#242424]"
+                      className="text-[#22c55e]"
                     >
                       <ArrowDown className="h-5 w-5" />
                     </motion.div>
@@ -66,7 +61,7 @@ export function FaqSection() {
                       className="overflow-hidden"
                     >
                       <div className="pb-10 pt-1 max-w-[920px]">
-                        <p className="font-mono text-[16px] text-[#4e4d4d] leading-[1.45]">
+                        <p className="font-mono text-[16px] text-[#c5b89f] leading-[1.45]">
                           {item.answer}
                         </p>
                       </div>
