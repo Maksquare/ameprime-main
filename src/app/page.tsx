@@ -1,9 +1,10 @@
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { PackagesDeck } from "@/components/PackagesDeck";
 import { LogoShowcase } from "@/components/LogoShowcase";
-import { SynergyPipeline } from "@/components/SynergyPipeline";
 import { ServicesSection } from "@/components/ServicesSection";
+import { SynergyPipeline } from "@/components/SynergyPipeline";
 import { CaseStudiesSection } from "@/components/CaseStudiesSection";
 import { ProjectCalculator } from "@/components/ProjectCalculator";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
@@ -20,34 +21,37 @@ export default function Home() {
       {/* 2. Primary Navigation Bar with Dark Glassmorphic Styling & Mobile Drawer */}
       <Navbar />
 
-      {/* 3. Pure Typographic Hero Section with Deep Imperial Emerald Wash */}
+      {/* 3. Hero Section (Directly reflecting landing page inspo.jpg) */}
       <HeroSection />
 
-      {/* 4. Interactive Logo & Mark Architecture Showcase with Geometric Construction Toggle */}
+      {/* 4. 3D Fanned-Out Packages Deck (Directly reflecting packages page inspo.jpg) */}
+      <PackagesDeck />
+
+      {/* 5. Interactive Logo Architecture Atelier with Geometric Grid Overlays */}
       <LogoShowcase />
 
-      {/* 5. Interactive Quad-Pillar Synergy Pipeline */}
-      <SynergyPipeline />
-
-      {/* 6. The Four Disciplines (Including Elevated Next.js Card with #10451d Emerald Satin) */}
+      {/* 6. Console-Style Services Showcase with Floor Reflections (Directly reflecting services page inspo.jpg) */}
       <ServicesSection />
 
-      {/* 7. Selected Works & Case Studies with Logo & Platform Filters */}
+      {/* 7. Interactive Process Synergy Pipeline */}
+      <SynergyPipeline />
+
+      {/* 8. Selected Works & Case Studies */}
       <CaseStudiesSection />
 
-      {/* 8. Interactive Real-Time Scope & Price Estimator with Logo Design Tiers */}
+      {/* 9. Interactive Scope & Cost Calculator */}
       <ProjectCalculator />
 
-      {/* 9. Executive Client Testimonials */}
+      {/* 10. Executive Client Testimonials */}
       <TestimonialsSection />
 
-      {/* 10. Editorial FAQ Accordion Rows */}
+      {/* 11. Editorial FAQ Accordion */}
       <FaqSection />
 
-      {/* 11. Consultation & Commission Inquiry Form */}
+      {/* 12. Consultation & Commission Inquiry Form */}
       <ContactSection />
 
-      {/* 12. Monad Editorial Footer */}
+      {/* 13. Monad Editorial Footer */}
       <Footer />
     </main>
   );
